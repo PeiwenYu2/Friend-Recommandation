@@ -4,6 +4,11 @@
 public class Driver {
     public static void main(String args[]) throws Exception{
 
+        if (args.length < 4) {
+            System.err.println("Input and output paths is needed");
+            System.exit(0);
+        }
+
         String mutualFriendInputPath = args[0];
         String mutualFriendOutputPath = args[1];
         String newFriendOutputPath = args[2];
